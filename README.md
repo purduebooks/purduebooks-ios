@@ -81,10 +81,57 @@ This will be a simple app that allows Purdue students to sell their college book
 <img src="https://raw.githubusercontent.com/purduebooks/purduebooks-ios/master/wireframe-digital.jpeg" width=600>
 
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+#### BookPost
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user book post (default field) |
+   | seller        | Pointer to User| book seller |
+   | buyers        | Pointer to User Array | book buyer |
+   | image         | File     | image that user posts |
+   | location         | Location     | current location of the book |
+   | description       | String   | description of book (professor, edition, etc) |
+   | courseInfo | String   | course Name/Number (eg. CS 250) |
+   | createdAt     | DateTime | date when post is created (default field) |
+   
+#### User
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | userId      | String   | unique id for the user (default field) |
+   | fname        | Pointer to User| first name of user |
+   | lname        | Pointer to User Array | last name of user |
+   | email         | File     | e-mail of User |
+   | phNumber       | Integer   | phone number of user |
+   | dob       | DateTime   | date of birth of user |
+   
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+#### List of network requests by screen
+   - Home Feed Screen
+      - (Read/GET) Query all posts where user is not seller
+         ```swift
+         let query = PFQuery(className:"Post")
+         query.whereKey("author", notEqualTo: currentUser)
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let error = error { 
+               print(error.localizedDescription)
+            } else if let posts = posts {
+               print("Successfully retrieved \(posts.count) posts.")
+           // TODO: Do something with posts...
+            }
+         }
+         ```
+   - Create/Manage Book Post Screen
+      - (Create/POST) Create a new post
+      - (Update) Edit existing post
+      - (GET) View existing posts
+   - Profile Screen
+      - (Read/GET) Query logged in user object
+      - (Update/PUT) Update User First/Last Name
+      - (Update/PUT) Update User E-Mail
+      - (Update/PUT) Update User Phone Number
+   - Login / Register
+      - (GET) Log in with credentials and see if user/password combo is valid
+      - (POST) Register new account
