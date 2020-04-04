@@ -1,0 +1,9 @@
+platform :ios, '9.0'
+use_frameworks!
+
+pod "Parse"
+
+target 'Login-Designs' do
+  # Pods for Login-Designs
+  pod 'IQKeyboardManagerSwift'
+end

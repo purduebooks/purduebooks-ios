@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IIP-8v-TG2">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoSlab-Bold.ttf">
+            <string>RobotoSlab-Bold</string>
+        </array>
+        <array key="RobotoSlab-Light.ttf">
+            <string>RobotoSlab-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EeE-K3-eeQ">
+            <objects>
+                <viewController id="IIP-8v-TG2" customClass="ViewController" customModule="Login_Designs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="koH-Xz-zS3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZvK-QI-pch">
+                                <rect key="frame" x="75" y="144" width="225" height="79"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Purdue Books" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lmq-qu-UGO">
+                                        <rect key="frame" x="0.6666666666666714" y="0.0" width="223.66666666666663" height="45"/>
+                                        <fontDescription key="fontDescription" name="RobotoSlab-Bold" family="Roboto Slab" pointSize="34"/>
+                                        <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in to continue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ExP-h2-MY8">
+                                        <rect key="frame" x="32.333333333333329" y="55" width="160.33333333333337" height="24"/>
+                                        <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="18"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="M08-gT-riv"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="vnK-17-uQ4">
+                                <rect key="frame" x="50" y="423" width="275" height="119"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BAk-OH-Qth" customClass="FormTextField" customModule="Login_Designs" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="m2v-Vj-JXz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t1t-jv-yzG" customClass="FormTextField" customModule="Login_Designs" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="77" width="275" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="Fnt-PH-EMT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQ6-qL-dc0">
+                                <rect key="frame" x="157.66666666666666" y="602" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="OlM-XD-ihy"/>
+                                    <constraint firstAttribute="height" constant="60" id="fHo-q2-A5k"/>
+                                </constraints>
+                                <state key="normal" image="design_one/Login button"/>
+                                <connections>
+                                    <action selector="loginButton:" destination="IIP-8v-TG2" eventType="touchUpInside" id="hsK-GK-yoc"/>
+                                    <segue destination="qim-U5-cFu" kind="presentation" identifier="loginSegue" id="XhZ-sk-bdD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgH-rN-eZM">
+                                <rect key="frame" x="95.666666666666686" y="692" width="184" height="36"/>
+                                <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="18"/>
+                                <state key="normal" title="Sign up, if you’re new!">
+                                    <color key="titleColor" red="0.62352941179999999" green="0.62352941179999999" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerButton:" destination="IIP-8v-TG2" eventType="touchUpInside" id="r5g-Wt-ogy"/>
+                                    <segue destination="d9j-u2-dSi" kind="presentation" identifier="signUpSegue" id="jJq-vf-9cO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fzO-ka-FJd" firstAttribute="bottom" secondItem="VgH-rN-eZM" secondAttribute="bottom" constant="50" id="4qs-YN-Tq1"/>
+                            <constraint firstItem="ZvK-QI-pch" firstAttribute="top" secondItem="fzO-ka-FJd" secondAttribute="top" constant="100" id="7FX-go-Qa1"/>
+                            <constraint firstItem="VgH-rN-eZM" firstAttribute="top" secondItem="hQ6-qL-dc0" secondAttribute="bottom" constant="30" id="Hyj-Zv-wKj"/>
+                            <constraint firstItem="hQ6-qL-dc0" firstAttribute="centerX" secondItem="koH-Xz-zS3" secondAttribute="centerX" id="YY7-9t-FKx"/>
+                            <constraint firstItem="fzO-ka-FJd" firstAttribute="trailing" secondItem="ZvK-QI-pch" secondAttribute="trailing" constant="75" id="ad7-e9-PQ9"/>
+                            <constraint firstItem="ZvK-QI-pch" firstAttribute="leading" secondItem="fzO-ka-FJd" secondAttribute="leading" constant="75" id="bpI-lP-tKf"/>
+                            <constraint firstItem="VgH-rN-eZM" firstAttribute="centerX" secondItem="koH-Xz-zS3" secondAttribute="centerX" id="i3F-YI-jgT"/>
+                            <constraint firstItem="hQ6-qL-dc0" firstAttribute="top" secondItem="vnK-17-uQ4" secondAttribute="bottom" constant="60" id="qN9-TG-Egq"/>
+                            <constraint firstItem="fzO-ka-FJd" firstAttribute="trailing" secondItem="vnK-17-uQ4" secondAttribute="trailing" constant="50" id="qvs-FG-nEy"/>
+                            <constraint firstItem="vnK-17-uQ4" firstAttribute="leading" secondItem="fzO-ka-FJd" secondAttribute="leading" constant="50" id="vme-gb-BkX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fzO-ka-FJd"/>
+                    </view>
+                    <connections>
+                        <outlet property="passwordField" destination="t1t-jv-yzG" id="baH-Ro-LLh"/>
+                        <outlet property="usernameField" destination="BAk-OH-Qth" id="nCY-Tz-2V7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aGs-jr-8E0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="-84"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LXx-ML-Bpo">
+            <objects>
+                <viewController id="qim-U5-cFu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L7q-TS-SwO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="1i2-2a-c9Z"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l4o-4F-ncA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="712"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="TX2-gi-o2K">
+            <objects>
+                <viewController id="d9j-u2-dSi" customClass="RegisterViewController" customModule="Purdue_Books" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g0m-fj-hkr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Register!" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fb1-Pj-bPs">
+                                <rect key="frame" x="0.0" y="95" width="375" height="46.666666666666657"/>
+                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="RobotoSlab-Bold" family="Roboto Slab" pointSize="34"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wcZ-04-Tza" customClass="FormTextField" customModule="Login_Designs" customModuleProvider="target">
+                                <rect key="frame" x="50" y="226" width="275" height="25.666666666666657"/>
+                                <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g9o-cO-JjT" customClass="FormTextField" customModule="Login_Designs" customModuleProvider="target">
+                                <rect key="frame" x="50" y="286.66666666666669" width="275" height="25.666666666666686"/>
+                                <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Retype Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CoI-fA-8Hd" customClass="FormTextField" customModule="Login_Designs" customModuleProvider="target">
+                                <rect key="frame" x="50" y="340.33333333333331" width="275" height="25.666666666666686"/>
+                                <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kev-3O-DD6">
+                                <rect key="frame" x="50" y="552" width="275" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Register!!"/>
+                                <connections>
+                                    <action selector="onRegister:" destination="d9j-u2-dSi" eventType="touchUpInside" id="POX-dm-v4Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="CoI-fA-8Hd" firstAttribute="top" secondItem="g9o-cO-JjT" secondAttribute="bottom" constant="28" id="0EI-h4-20P"/>
+                            <constraint firstItem="fb1-Pj-bPs" firstAttribute="leading" secondItem="sjp-ly-N4e" secondAttribute="leading" id="5Gu-9b-wek"/>
+                            <constraint firstItem="sjp-ly-N4e" firstAttribute="trailing" secondItem="CoI-fA-8Hd" secondAttribute="trailing" constant="50" id="6Aw-4V-IC7"/>
+                            <constraint firstItem="sjp-ly-N4e" firstAttribute="bottom" secondItem="kev-3O-DD6" secondAttribute="bottom" constant="131" id="CJI-mk-kfv"/>
+                            <constraint firstItem="sjp-ly-N4e" firstAttribute="trailing" secondItem="g9o-cO-JjT" secondAttribute="trailing" constant="50" id="FD2-eU-ndK"/>
+                            <constraint firstItem="g9o-cO-JjT" firstAttribute="leading" secondItem="sjp-ly-N4e" secondAttribute="leading" constant="50" id="FrQ-nE-pbw"/>
+                            <constraint firstItem="sjp-ly-N4e" firstAttribute="trailing" secondItem="wcZ-04-Tza" secondAttribute="trailing" constant="50" id="Naf-4H-uue"/>
+                            <constraint firstItem="sjp-ly-N4e" firstAttribute="trailing" secondItem="fb1-Pj-bPs" secondAttribute="trailing" id="Tgh-cA-Glt"/>
+                            <constraint firstItem="sjp-ly-N4e" firstAttribute="trailing" secondItem="kev-3O-DD6" secondAttribute="trailing" constant="50" id="Tz2-i0-RFK"/>
+                            <constraint firstItem="g9o-cO-JjT" firstAttribute="top" secondItem="wcZ-04-Tza" secondAttribute="bottom" constant="35" id="UIM-jX-Ph7"/>
+                            <constraint firstItem="fb1-Pj-bPs" firstAttribute="top" secondItem="sjp-ly-N4e" secondAttribute="top" constant="95" id="vgo-c9-hm5"/>
+                            <constraint firstItem="wcZ-04-Tza" firstAttribute="leading" secondItem="sjp-ly-N4e" secondAttribute="leading" constant="50" id="vmQ-bf-zKQ"/>
+                            <constraint firstItem="kev-3O-DD6" firstAttribute="leading" secondItem="sjp-ly-N4e" secondAttribute="leading" constant="50" id="wYN-na-cid"/>
+                            <constraint firstItem="wcZ-04-Tza" firstAttribute="top" secondItem="fb1-Pj-bPs" secondAttribute="bottom" constant="84.329999999999998" id="xGh-c3-a2N"/>
+                            <constraint firstItem="CoI-fA-8Hd" firstAttribute="leading" secondItem="sjp-ly-N4e" secondAttribute="leading" constant="50" id="zQv-Cd-x5m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sjp-ly-N4e"/>
+                    </view>
+                    <connections>
+                        <outlet property="confirmPasswordField" destination="CoI-fA-8Hd" id="4zf-zl-xM3"/>
+                        <outlet property="passwordField" destination="g9o-cO-JjT" id="AMk-vr-Nlh"/>
+                        <outlet property="usernameField" destination="wcZ-04-Tza" id="hgW-c4-cZD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Me1-dY-9tv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1302" y="-84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="design_one/Login button" width="60" height="60"/>
+    </resources>
+</document>
