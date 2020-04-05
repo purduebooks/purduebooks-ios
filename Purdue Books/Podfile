@@ -5,7 +5,7 @@ pod "Parse"
 pod ‘Alamofire’
 pod 'AlamofireImage'
 
-target 'Login-Designs' do
+target 'Purdue Books' do
   # Pods for Login-Designs
   pod 'IQKeyboardManagerSwift'
 end

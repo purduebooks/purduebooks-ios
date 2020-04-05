@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  Login-Designs
 //
-//  Created by Gerald Brigen on 4/18/19.
-//  Copyright © 2019 Gerald Brigen. All rights reserved.
+//  Created by Purdue Books on 4/18/19.
+//  Copyright © 2019 Purdue Books. All rights reserved.
 //
 
 import UIKit

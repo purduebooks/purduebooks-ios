@@ -16,7 +16,7 @@ DEPENDENCIES:
   - Parse
 
 SPEC REPOS:
-  trunk:
+  https://github.com/cocoapods/specs.git:
     - Alamofire
     - AlamofireImage
     - Bolts
@@ -30,6 +30,6 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 0f0ae8935360b4003e6ea1ac7c19898f01e2f7c7
   Parse: c1ad2a04d2cab2b54b6fb7da05f741abf2cf57d1
 
-PODFILE CHECKSUM: b9d5973247b05a3e2adeb9bb86cf35bdcb48ac27
+PODFILE CHECKSUM: 20a720db1b36d2a0b35c82e7546fa79fbf950574
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.7.1

@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23E61EA624391DE5009FF995 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E61EA524391DE5009FF995 /* RegisterViewController.swift */; };
+		494C3FFE243A319600D1E8F1 /* ListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494C3FFD243A319600D1E8F1 /* ListingViewController.swift */; };
+		A5D63C84D403BBACD60CAC7B /* Pods_Purdue_Books.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D88AB4281646DD95A4F53F7 /* Pods_Purdue_Books.framework */; };
+		E2168B3A226A353000163F7C /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2168B39226A351400163F7C /* OpenSans-Regular.ttf */; };
+		E2168B3C226A3B0D00163F7C /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2168B3B226A3AE000163F7C /* OpenSans-Bold.ttf */; };
+		E2168B3E226A418400163F7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2168B3D226A418400163F7C /* Assets.xcassets */; };
+		E21C007D2268EFEC00E0ECCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21C007C2268EFEC00E0ECCD /* AppDelegate.swift */; };
+		E21C007F2268EFEC00E0ECCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21C007E2268EFEC00E0ECCD /* ViewController.swift */; };
+		E21C00822268EFEC00E0ECCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E21C00802268EFEC00E0ECCD /* Main.storyboard */; };
+		E21C00872268EFEE00E0ECCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E21C00852268EFEE00E0ECCD /* LaunchScreen.storyboard */; };
+		E21C00902268FBB800E0ECCD /* RobotoSlab-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E21C008F2268FB7800E0ECCD /* RobotoSlab-Bold.ttf */; };
+		E21C00922268FCDC00E0ECCD /* RobotoSlab-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E21C00912268FCD600E0ECCD /* RobotoSlab-Light.ttf */; };
+		E21C0094226903E000E0ECCD /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21C0093226903E000E0ECCD /* FormTextField.swift */; };
+		E2A0BEE0226C28C3001F43AA /* WorkSans-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = E2A0BEDD226C28BB001F43AA /* WorkSans-Black.otf */; };
+		E2A0BEE1226C28D1001F43AA /* WorkSans-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E2A0BEDF226C28BB001F43AA /* WorkSans-Bold.otf */; };
+		E2A0BEE2226C28D6001F43AA /* WorkSans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E2A0BEDE226C28BB001F43AA /* WorkSans-Regular.otf */; };
+		E2A0BEE8226C5757001F43AA /* Oxygen-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2A0BEE6226C5720001F43AA /* Oxygen-Bold.ttf */; };
+		E2A0BEE9226C576D001F43AA /* Oxygen-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2A0BEE7226C5720001F43AA /* Oxygen-Regular.ttf */; };
+		E2A0BEF1226C79F8001F43AA /* MavenPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2A0BEEE226C79F0001F43AA /* MavenPro-Bold.ttf */; };
+		E2A0BEF2226C7A1E001F43AA /* MavenPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2A0BEEF226C79F1001F43AA /* MavenPro-Medium.ttf */; };
+		E2A0BEF3226C7A34001F43AA /* MavenPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2A0BEF0226C79F1001F43AA /* MavenPro-Regular.ttf */; };
+		E2A0BEF5226CEA1C001F43AA /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A0BEF4226CEA1C001F43AA /* ShadowView.swift */; };
+		E2A0BEFA226D8CD6001F43AA /* NunitoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2A0BEF8226D8CB7001F43AA /* NunitoSans-Bold.ttf */; };
+		E2A0BEFB226D8CF0001F43AA /* NunitoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2A0BEF9226D8CB7001F43AA /* NunitoSans-Regular.ttf */; };
+		E2A0BEFD226D92F0001F43AA /* DesignableUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A0BEFC226D92F0001F43AA /* DesignableUITextField.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D88AB4281646DD95A4F53F7 /* Pods_Purdue_Books.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Purdue_Books.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23D4DD7D243A4CEC0050B901 /* WorkSans-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WorkSans-Bold.otf"; path = "../../../../Desktop/WorkSans-Bold.otf"; sourceTree = "<group>"; };
+		23E61EA524391DE5009FF995 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		335408D8FFFC0502EBB4DB31 /* Pods-Purdue Books.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Purdue Books.release.xcconfig"; path = "Pods/Target Support Files/Pods-Purdue Books/Pods-Purdue Books.release.xcconfig"; sourceTree = "<group>"; };
+		494C3FFD243A319600D1E8F1 /* ListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewController.swift; sourceTree = "<group>"; };
+		5A0EFFE8026969710110EA33 /* Pods-Login-Designs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Login-Designs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Login-Designs/Pods-Login-Designs.debug.xcconfig"; sourceTree = "<group>"; };
+		6023CAE17DFB29CFD14FBA05 /* Pods-Login-Designs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Login-Designs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Login-Designs/Pods-Login-Designs.release.xcconfig"; sourceTree = "<group>"; };
+		E06233F2EFD214C20CEC9DDE /* Pods-Purdue Books.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Purdue Books.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Purdue Books/Pods-Purdue Books.debug.xcconfig"; sourceTree = "<group>"; };
+		E2168B39226A351400163F7C /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		E2168B3B226A3AE000163F7C /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		E2168B3D226A418400163F7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E21C00792268EFEC00E0ECCD /* Purdue Books.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Purdue Books.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E21C007C2268EFEC00E0ECCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E21C007E2268EFEC00E0ECCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E21C00812268EFEC00E0ECCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E21C00862268EFEE00E0ECCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E21C00882268EFEE00E0ECCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E21C008F2268FB7800E0ECCD /* RobotoSlab-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Bold.ttf"; sourceTree = "<group>"; };
+		E21C00912268FCD600E0ECCD /* RobotoSlab-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Light.ttf"; sourceTree = "<group>"; };
+		E21C0093226903E000E0ECCD /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
+		E2A0BEDD226C28BB001F43AA /* WorkSans-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Black.otf"; sourceTree = "<group>"; };
+		E2A0BEDE226C28BB001F43AA /* WorkSans-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Regular.otf"; sourceTree = "<group>"; };
+		E2A0BEDF226C28BB001F43AA /* WorkSans-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Bold.otf"; sourceTree = "<group>"; };
+		E2A0BEE6226C5720001F43AA /* Oxygen-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Bold.ttf"; sourceTree = "<group>"; };
+		E2A0BEE7226C5720001F43AA /* Oxygen-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Regular.ttf"; sourceTree = "<group>"; };
+		E2A0BEEE226C79F0001F43AA /* MavenPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MavenPro-Bold.ttf"; sourceTree = "<group>"; };
+		E2A0BEEF226C79F1001F43AA /* MavenPro-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MavenPro-Medium.ttf"; sourceTree = "<group>"; };
+		E2A0BEF0226C79F1001F43AA /* MavenPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MavenPro-Regular.ttf"; sourceTree = "<group>"; };
+		E2A0BEF4226CEA1C001F43AA /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		E2A0BEF8226D8CB7001F43AA /* NunitoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Bold.ttf"; sourceTree = "<group>"; };
+		E2A0BEF9226D8CB7001F43AA /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Regular.ttf"; sourceTree = "<group>"; };
+		E2A0BEFC226D92F0001F43AA /* DesignableUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUITextField.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E21C00762268EFEC00E0ECCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5D63C84D403BBACD60CAC7B /* Pods_Purdue_Books.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		912A5646F4AE0B14D6AE2810 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D88AB4281646DD95A4F53F7 /* Pods_Purdue_Books.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E21C00702268EFEC00E0ECCD = {
+			isa = PBXGroup;
+			children = (
+				E21C007B2268EFEC00E0ECCD /* Login-Designs */,
+				E21C007A2268EFEC00E0ECCD /* Products */,
+				F9E24B5D5DDE8ED5C32A6867 /* Pods */,
+				912A5646F4AE0B14D6AE2810 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E21C007A2268EFEC00E0ECCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E21C00792268EFEC00E0ECCD /* Purdue Books.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E21C007B2268EFEC00E0ECCD /* Login-Designs */ = {
+			isa = PBXGroup;
+			children = (
+				EEF9AF4A2283176A00485992 /* AppDelegate */,
+				E21C008E2268FB1F00E0ECCD /* fonts */,
+				EEF9AF4C2283180200485992 /* CustomViews */,
+				E2ED919F226DB4C4004C76B7 /* ViewControllers */,
+				EEF9AF4B228317C400485992 /* Storyboards */,
+				E2168B3D226A418400163F7C /* Assets.xcassets */,
+				E21C00882268EFEE00E0ECCD /* Info.plist */,
+			);
+			path = "Login-Designs";
+			sourceTree = "<group>";
+		};
+		E21C008E2268FB1F00E0ECCD /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E21C008F2268FB7800E0ECCD /* RobotoSlab-Bold.ttf */,
+				E2A0BEEE226C79F0001F43AA /* MavenPro-Bold.ttf */,
+				E2A0BEEF226C79F1001F43AA /* MavenPro-Medium.ttf */,
+				E2A0BEF0226C79F1001F43AA /* MavenPro-Regular.ttf */,
+				E21C00912268FCD600E0ECCD /* RobotoSlab-Light.ttf */,
+				E2168B39226A351400163F7C /* OpenSans-Regular.ttf */,
+				E2168B3B226A3AE000163F7C /* OpenSans-Bold.ttf */,
+				E2A0BEDD226C28BB001F43AA /* WorkSans-Black.otf */,
+				E2A0BEDF226C28BB001F43AA /* WorkSans-Bold.otf */,
+				E2A0BEDE226C28BB001F43AA /* WorkSans-Regular.otf */,
+				E2A0BEE6226C5720001F43AA /* Oxygen-Bold.ttf */,
+				E2A0BEE7226C5720001F43AA /* Oxygen-Regular.ttf */,
+				E2A0BEF8226D8CB7001F43AA /* NunitoSans-Bold.ttf */,
+				23D4DD7D243A4CEC0050B901 /* WorkSans-Bold.otf */,
+				E2A0BEF9226D8CB7001F43AA /* NunitoSans-Regular.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		E2ED919F226DB4C4004C76B7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E21C007E2268EFEC00E0ECCD /* ViewController.swift */,
+				23E61EA524391DE5009FF995 /* RegisterViewController.swift */,
+				494C3FFD243A319600D1E8F1 /* ListingViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EEF9AF4A2283176A00485992 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E21C007C2268EFEC00E0ECCD /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		EEF9AF4B228317C400485992 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E21C00852268EFEE00E0ECCD /* LaunchScreen.storyboard */,
+				E21C00802268EFEC00E0ECCD /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EEF9AF4C2283180200485992 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				E21C0093226903E000E0ECCD /* FormTextField.swift */,
+				E2A0BEFC226D92F0001F43AA /* DesignableUITextField.swift */,
+				E2A0BEF4226CEA1C001F43AA /* ShadowView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		F9E24B5D5DDE8ED5C32A6867 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A0EFFE8026969710110EA33 /* Pods-Login-Designs.debug.xcconfig */,
+				6023CAE17DFB29CFD14FBA05 /* Pods-Login-Designs.release.xcconfig */,
+				E06233F2EFD214C20CEC9DDE /* Pods-Purdue Books.debug.xcconfig */,
+				335408D8FFFC0502EBB4DB31 /* Pods-Purdue Books.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E21C00782268EFEC00E0ECCD /* Purdue Books */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E21C008B2268EFEE00E0ECCD /* Build configuration list for PBXNativeTarget "Purdue Books" */;
+			buildPhases = (
+				292D37B188B7F046EEDE9B01 /* [CP] Check Pods Manifest.lock */,
+				E21C00752268EFEC00E0ECCD /* Sources */,
+				E21C00762268EFEC00E0ECCD /* Frameworks */,
+				E21C00772268EFEC00E0ECCD /* Resources */,
+				306ABF8B1C2408C929D646B6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Purdue Books";
+			productName = "Login-Designs";
+			productReference = E21C00792268EFEC00E0ECCD /* Purdue Books.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E21C00712268EFEC00E0ECCD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Purdue Books";
+				TargetAttributes = {
+					E21C00782268EFEC00E0ECCD = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = E21C00742268EFEC00E0ECCD /* Build configuration list for PBXProject "Purdue Books" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E21C00702268EFEC00E0ECCD;
+			productRefGroup = E21C007A2268EFEC00E0ECCD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E21C00782268EFEC00E0ECCD /* Purdue Books */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E21C00772268EFEC00E0ECCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E21C00902268FBB800E0ECCD /* RobotoSlab-Bold.ttf in Resources */,
+				E2A0BEF3226C7A34001F43AA /* MavenPro-Regular.ttf in Resources */,
+				E2A0BEFB226D8CF0001F43AA /* NunitoSans-Regular.ttf in Resources */,
+				E2A0BEE8226C5757001F43AA /* Oxygen-Bold.ttf in Resources */,
+				E2A0BEF1226C79F8001F43AA /* MavenPro-Bold.ttf in Resources */,
+				E2168B3C226A3B0D00163F7C /* OpenSans-Bold.ttf in Resources */,
+				E2A0BEE9226C576D001F43AA /* Oxygen-Regular.ttf in Resources */,
+				E21C00922268FCDC00E0ECCD /* RobotoSlab-Light.ttf in Resources */,
+				E2A0BEE0226C28C3001F43AA /* WorkSans-Black.otf in Resources */,
+				E2A0BEE2226C28D6001F43AA /* WorkSans-Regular.otf in Resources */,
+				E21C00872268EFEE00E0ECCD /* LaunchScreen.storyboard in Resources */,
+				E2A0BEF2226C7A1E001F43AA /* MavenPro-Medium.ttf in Resources */,
+				E2168B3E226A418400163F7C /* Assets.xcassets in Resources */,
+				E2168B3A226A353000163F7C /* OpenSans-Regular.ttf in Resources */,
+				E21C00822268EFEC00E0ECCD /* Main.storyboard in Resources */,
+				E2A0BEE1226C28D1001F43AA /* WorkSans-Bold.otf in Resources */,
+				E2A0BEFA226D8CD6001F43AA /* NunitoSans-Bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		292D37B188B7F046EEDE9B01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Purdue Books-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		306ABF8B1C2408C929D646B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Purdue Books/Pods-Purdue Books-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Purdue Books/Pods-Purdue Books-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Purdue Books/Pods-Purdue Books-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E21C00752268EFEC00E0ECCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E21C007F2268EFEC00E0ECCD /* ViewController.swift in Sources */,
+				E2A0BEF5226CEA1C001F43AA /* ShadowView.swift in Sources */,
+				E21C0094226903E000E0ECCD /* FormTextField.swift in Sources */,
+				23E61EA624391DE5009FF995 /* RegisterViewController.swift in Sources */,
+				494C3FFE243A319600D1E8F1 /* ListingViewController.swift in Sources */,
+				E2A0BEFD226D92F0001F43AA /* DesignableUITextField.swift in Sources */,
+				E21C007D2268EFEC00E0ECCD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E21C00802268EFEC00E0ECCD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E21C00812268EFEC00E0ECCD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E21C00852268EFEE00E0ECCD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E21C00862268EFEE00E0ECCD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E21C00892268EFEE00E0ECCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E21C008A2268EFEE00E0ECCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E21C008C2268EFEE00E0ECCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E06233F2EFD214C20CEC9DDE /* Pods-Purdue Books.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GYL934XVH2;
+				INFOPLIST_FILE = "Login-Designs/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.purdue.purduebooks.ios;
+				PRODUCT_NAME = "Purdue Books";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E21C008D2268EFEE00E0ECCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 335408D8FFFC0502EBB4DB31 /* Pods-Purdue Books.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GYL934XVH2;
+				INFOPLIST_FILE = "Login-Designs/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.purdue.purduebooks.ios;
+				PRODUCT_NAME = "Purdue Books";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E21C00742268EFEC00E0ECCD /* Build configuration list for PBXProject "Purdue Books" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E21C00892268EFEE00E0ECCD /* Debug */,
+				E21C008A2268EFEE00E0ECCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E21C008B2268EFEE00E0ECCD /* Build configuration list for PBXNativeTarget "Purdue Books" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E21C008C2268EFEE00E0ECCD /* Debug */,
+				E21C008D2268EFEE00E0ECCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E21C00712268EFEC00E0ECCD /* Project object */;
+}
