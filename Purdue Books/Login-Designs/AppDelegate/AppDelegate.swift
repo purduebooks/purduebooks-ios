@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Parse.initialize(
             with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in
-                configuration.applicationId = "Purdue Books"
+                configuration.applicationId = "purdueBooks"
                 configuration.server = "https://purdue-books.herokuapp.com/parse"
             })
         )

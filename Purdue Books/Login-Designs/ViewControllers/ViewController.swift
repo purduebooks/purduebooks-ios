@@ -29,6 +29,7 @@ class ViewController: UIViewController {
              } else {
                  print("Error: \(error?.localizedDescription)")
                 
+                self.dismiss(animated: true, completion:nil)
             }
         }
     }

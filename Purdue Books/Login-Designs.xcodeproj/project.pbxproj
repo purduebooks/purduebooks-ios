@@ -34,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23D4DD7D243A4CEC0050B901 /* WorkSans-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WorkSans-Bold.otf"; path = "../../../../Desktop/WorkSans-Bold.otf"; sourceTree = "<group>"; };
 		23E61EA524391DE5009FF995 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3E1A5C10790268EB0F4741BC /* Pods_Login_Designs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Login_Designs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0EFFE8026969710110EA33 /* Pods-Login-Designs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Login-Designs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Login-Designs/Pods-Login-Designs.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +133,7 @@
 				E2A0BEE6226C5720001F43AA /* Oxygen-Bold.ttf */,
 				E2A0BEE7226C5720001F43AA /* Oxygen-Regular.ttf */,
 				E2A0BEF8226D8CB7001F43AA /* NunitoSans-Bold.ttf */,
+				23D4DD7D243A4CEC0050B901 /* WorkSans-Bold.otf */,
 				E2A0BEF9226D8CB7001F43AA /* NunitoSans-Regular.ttf */,
 			);
 			path = fonts;
