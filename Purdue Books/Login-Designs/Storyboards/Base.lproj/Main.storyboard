@@ -111,7 +111,7 @@
             </objects>
             <point key="canvasLocation" x="345" y="-84"/>
         </scene>
-        <!--Item 2-->
+        <!--View Controller-->
         <scene sceneID="nHj-e8-3fX">
             <objects>
                 <viewController id="KKf-rt-kls" sceneMemberID="viewController">
@@ -121,18 +121,24 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="zvC-Uf-Uza"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="y15-XE-khP"/>
+                    <navigationItem key="navigationItem" id="ZOo-nf-6US">
+                        <barButtonItem key="rightBarButtonItem" title="New" id="iLF-iY-h3v">
+                            <connections>
+                                <segue destination="PwX-Cf-Dmg" kind="showDetail" id="o1V-oU-Qtp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wzr-LA-e0e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1550" y="1484"/>
+            <point key="canvasLocation" x="1550" y="2264"/>
         </scene>
-        <!--Item 1-->
+        <!--My Books-->
         <scene sceneID="TQk-Tf-pK1">
             <objects>
                 <viewController id="PwX-Cf-Dmg" customClass="ListingViewController" customModule="Purdue_Books" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vnC-yA-c8Y">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Picture Of Textbook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSu-u0-Unw">
@@ -150,9 +156,10 @@
                                     <action selector="onSubmit:" destination="PwX-Cf-Dmg" eventType="touchUpInside" id="B0L-W1-4qR"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PAU-t4-Vdf">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square.and.arrow.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="PAU-t4-Vdf">
                                 <rect key="frame" x="73" y="320" width="229" height="201"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Hbc-dw-W9H" appends="YES" id="JdF-D8-BAb"/>
@@ -222,7 +229,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="krp-pU-SVV"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="OJw-wx-rwF"/>
+                    <tabBarItem key="tabBarItem" title="My Books" id="OJw-wx-rwF"/>
+                    <navigationItem key="navigationItem" id="gNb-j7-0Mb"/>
                     <connections>
                         <outlet property="course" destination="xuH-lR-KUu" id="l2a-rd-YPR"/>
                         <outlet property="courseNumber" destination="wok-yF-fcc" id="a3B-WC-hVa"/>
@@ -238,7 +246,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="124" y="1483.7438423645322"/>
+            <point key="canvasLocation" x="2505" y="2263"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Vau-n3-GR9">
@@ -250,8 +258,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="PwX-Cf-Dmg" kind="relationship" relationship="viewControllers" id="yN0-Oh-Dxq"/>
-                        <segue destination="KKf-rt-kls" kind="relationship" relationship="viewControllers" id="sZz-S5-hv8"/>
+                        <segue destination="HM0-sz-J5f" kind="relationship" relationship="viewControllers" id="sZz-S5-hv8"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XjM-Ld-xHn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -326,8 +333,28 @@
             </objects>
             <point key="canvasLocation" x="1302" y="-84"/>
         </scene>
+        <!--My Books-->
+        <scene sceneID="tzA-V2-sJb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HM0-sz-J5f" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Books" id="y15-XE-khP"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yLx-Ua-9RA">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KKf-rt-kls" kind="relationship" relationship="rootViewController" id="JeI-o0-dzd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14U-Io-qa5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1549.5999999999999" y="1483.7438423645322"/>
+        </scene>
     </scenes>
     <resources>
         <image name="design_one/Login button" width="60" height="60"/>
+        <image name="square.and.arrow.down" catalog="system" width="60" height="64"/>
     </resources>
 </document>
