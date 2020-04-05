@@ -1,4 +1,7 @@
 PODS:
+  - Alamofire (4.9.1)
+  - AlamofireImage (3.6.0):
+    - Alamofire (~> 4.9)
   - Bolts/Tasks (1.9.0)
   - IQKeyboardManagerSwift (6.2.1)
   - Parse (1.17.3):
@@ -7,20 +10,26 @@ PODS:
     - Bolts/Tasks (~> 1.9)
 
 DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
   - IQKeyboardManagerSwift
   - Parse
 
 SPEC REPOS:
   trunk:
+    - Alamofire
+    - AlamofireImage
     - Bolts
     - IQKeyboardManagerSwift
     - Parse
 
 SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   IQKeyboardManagerSwift: 0f0ae8935360b4003e6ea1ac7c19898f01e2f7c7
   Parse: c1ad2a04d2cab2b54b6fb7da05f741abf2cf57d1
 
-PODFILE CHECKSUM: 8f23d55424f83c8e6934be38af4f21c57ccf8798
+PODFILE CHECKSUM: b9d5973247b05a3e2adeb9bb86cf35bdcb48ac27
 
 COCOAPODS: 1.8.4

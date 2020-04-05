@@ -19,7 +19,7 @@
         <!--View Controller-->
         <scene sceneID="EeE-K3-eeQ">
             <objects>
-                <viewController id="IIP-8v-TG2" customClass="ViewController" customModule="Login_Designs" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IIP-8v-TG2" customClass="ViewController" customModule="Purdue_Books" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="koH-Xz-zS3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,7 +45,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="vnK-17-uQ4">
                                 <rect key="frame" x="50" y="423" width="275" height="119"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BAk-OH-Qth" customClass="FormTextField" customModule="Login_Designs" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BAk-OH-Qth" customClass="FormTextField" customModule="Purdue_Books" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="275" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="m2v-Vj-JXz"/>
@@ -53,7 +53,7 @@
                                         <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t1t-jv-yzG" customClass="FormTextField" customModule="Login_Designs" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t1t-jv-yzG" customClass="FormTextField" customModule="Purdue_Books" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="77" width="275" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="Fnt-PH-EMT"/>
@@ -72,7 +72,7 @@
                                 <state key="normal" image="design_one/Login button"/>
                                 <connections>
                                     <action selector="loginButton:" destination="IIP-8v-TG2" eventType="touchUpInside" id="hsK-GK-yoc"/>
-                                    <segue destination="qim-U5-cFu" kind="presentation" identifier="loginSegue" id="XhZ-sk-bdD"/>
+                                    <segue destination="qPy-ul-yJ0" kind="presentation" identifier="loginSegue" modalPresentationStyle="fullScreen" id="qP3-8p-k9c"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgH-rN-eZM">
@@ -83,7 +83,7 @@
                                 </state>
                                 <connections>
                                     <action selector="registerButton:" destination="IIP-8v-TG2" eventType="touchUpInside" id="r5g-Wt-ogy"/>
-                                    <segue destination="d9j-u2-dSi" kind="presentation" identifier="signUpSegue" id="jJq-vf-9cO"/>
+                                    <segue destination="d9j-u2-dSi" kind="presentation" identifier="signUpSegue" modalPresentationStyle="fullScreen" id="jJq-vf-9cO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -111,52 +111,184 @@
             </objects>
             <point key="canvasLocation" x="345" y="-84"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="LXx-ML-Bpo">
+        <!--Item 2-->
+        <scene sceneID="nHj-e8-3fX">
             <objects>
-                <viewController id="qim-U5-cFu" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="L7q-TS-SwO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                <viewController id="KKf-rt-kls" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Op0-6D-YwC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="1i2-2a-c9Z"/>
+                        <viewLayoutGuide key="safeArea" id="zvC-Uf-Uza"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="y15-XE-khP"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="l4o-4F-ncA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wzr-LA-e0e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="345" y="712"/>
+            <point key="canvasLocation" x="1550" y="1484"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="TQk-Tf-pK1">
+            <objects>
+                <viewController id="PwX-Cf-Dmg" customClass="ListingViewController" customModule="Purdue_Books" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vnC-yA-c8Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Picture Of Textbook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSu-u0-Unw">
+                                <rect key="frame" x="94" y="291" width="187" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7I-D2-KWa">
+                                <rect key="frame" x="162" y="626" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="onSubmit:" destination="PwX-Cf-Dmg" eventType="touchUpInside" id="B0L-W1-4qR"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PAU-t4-Vdf">
+                                <rect key="frame" x="73" y="320" width="229" height="201"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Hbc-dw-W9H" appends="YES" id="JdF-D8-BAb"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0z-Q6-u62">
+                                <rect key="frame" x="168" y="664" width="36" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="onClear:" destination="PwX-Cf-Dmg" eventType="touchUpInside" id="Hp0-9x-ei1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMP-bb-zVa">
+                                <rect key="frame" x="34" y="121" width="34" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Course" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYy-lc-LYI">
+                                <rect key="frame" x="34" y="176" width="55" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Course Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xql-ec-jc1">
+                                <rect key="frame" x="34" y="232" width="121" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xW8-Wn-WeD">
+                                <rect key="frame" x="140" y="114" width="198" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xuH-lR-KUu">
+                                <rect key="frame" x="140" y="169" width="198" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wok-yF-fcc">
+                                <rect key="frame" x="203" y="225" width="135" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Description Of Textbook" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QVB-0g-Rv8">
+                                <rect key="frame" x="47" y="544" width="279" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New Listing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="waF-S2-ygq">
+                                <rect key="frame" x="94" y="44" width="193" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="RobotoSlab-Bold" family="Roboto Slab" pointSize="34"/>
+                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="krp-pU-SVV"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="OJw-wx-rwF"/>
+                    <connections>
+                        <outlet property="course" destination="xuH-lR-KUu" id="l2a-rd-YPR"/>
+                        <outlet property="courseNumber" destination="wok-yF-fcc" id="a3B-WC-hVa"/>
+                        <outlet property="descriptionOfTextbook" destination="QVB-0g-Rv8" id="Bke-TD-fOh"/>
+                        <outlet property="picture" destination="PAU-t4-Vdf" id="bkA-5c-CKE"/>
+                        <outlet property="titleTextbook" destination="xW8-Wn-WeD" id="47t-My-cQZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RHy-8t-zSw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Hbc-dw-W9H">
+                    <connections>
+                        <action selector="onCameraButton:" destination="PwX-Cf-Dmg" id="iMC-ju-KuE"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="124" y="1483.7438423645322"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Vau-n3-GR9">
+            <objects>
+                <tabBarController id="qPy-ul-yJ0" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="j90-2c-WEi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="PwX-Cf-Dmg" kind="relationship" relationship="viewControllers" id="yN0-Oh-Dxq"/>
+                        <segue destination="KKf-rt-kls" kind="relationship" relationship="viewControllers" id="sZz-S5-hv8"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XjM-Ld-xHn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="820" y="656"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="TX2-gi-o2K">
             <objects>
                 <viewController id="d9j-u2-dSi" customClass="RegisterViewController" customModule="Purdue_Books" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g0m-fj-hkr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Register!" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fb1-Pj-bPs">
-                                <rect key="frame" x="0.0" y="95" width="375" height="46.666666666666657"/>
+                                <rect key="frame" x="0.0" y="139" width="375" height="46.666666666666657"/>
                                 <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="RobotoSlab-Bold" family="Roboto Slab" pointSize="34"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wcZ-04-Tza" customClass="FormTextField" customModule="Login_Designs" customModuleProvider="target">
-                                <rect key="frame" x="50" y="226" width="275" height="25.666666666666657"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wcZ-04-Tza" customClass="FormTextField" customModule="Purdue_Books" customModuleProvider="target">
+                                <rect key="frame" x="50" y="270" width="275" height="25.666666666666686"/>
                                 <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g9o-cO-JjT" customClass="FormTextField" customModule="Login_Designs" customModuleProvider="target">
-                                <rect key="frame" x="50" y="286.66666666666669" width="275" height="25.666666666666686"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g9o-cO-JjT" customClass="FormTextField" customModule="Purdue_Books" customModuleProvider="target">
+                                <rect key="frame" x="50" y="330.66666666666669" width="275" height="25.666666666666686"/>
                                 <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Retype Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CoI-fA-8Hd" customClass="FormTextField" customModule="Login_Designs" customModuleProvider="target">
-                                <rect key="frame" x="50" y="340.33333333333331" width="275" height="25.666666666666686"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Retype Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CoI-fA-8Hd" customClass="FormTextField" customModule="Purdue_Books" customModuleProvider="target">
+                                <rect key="frame" x="50" y="384.33333333333331" width="275" height="25.666666666666686"/>
                                 <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kev-3O-DD6">
-                                <rect key="frame" x="50" y="552" width="275" height="41"/>
+                                <rect key="frame" x="50" y="606" width="275" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Register!!"/>
                                 <connections>
