@@ -141,3 +141,4 @@ This will be a simple app that allows Purdue students to sell their college book
 ## Milestone GIFs
 
 ### Milestone 1
+<img src='https://github.com/purduebooks/purduebooks-ios/blob/master/PurdueBooks_Milestone1.gif?raw=true' title='Video Walkthrough' width='' alt='Video Walkthrough' />
