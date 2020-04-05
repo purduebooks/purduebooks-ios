@@ -84,15 +84,17 @@ This will be a simple app that allows Purdue students to sell their college book
 ### Models
 #### BookPost
 
-   | Property      | Type     | Description |
+   | Textbooks      | Type     | Description |
    | ------------- | -------- | ------------|
    | objectId      | String   | unique id for the user book post (default field) |
-   | seller        | Pointer to User| book seller |
+   | Name          | String   | name of the book |
+   | Author        | Pointer to User| book seller |
    | buyers        | Pointer to User Array | book buyer |
    | image         | File     | image that user posts |
    | location         | Location     | current location of the book |
    | description       | String   | description of book (professor, edition, etc) |
-   | courseInfo | String   | course Name/Number (eg. CS 250) |
+   | CouseNumber | String   | course Name/Number (eg. CS 250) |
+   | Course | String   | course Name (eg. Computer Architecture) |
    | createdAt     | DateTime | date when post is created (default field) |
    
 #### User
