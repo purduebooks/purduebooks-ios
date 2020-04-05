@@ -35,6 +35,7 @@ class ListingViewController: UIViewController, UIImagePickerControllerDelegate, 
         listingTB["image"] = file
         listingTB.saveInBackground { (success, error) in
             if success {
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "reload_books"), object: nil);
                 self.dismiss(animated: true, completion:nil)
             } else {
                 print("Error: \(error?.localizedDescription)")

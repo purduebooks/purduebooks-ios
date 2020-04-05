@@ -111,23 +111,68 @@
             </objects>
             <point key="canvasLocation" x="345" y="-84"/>
         </scene>
-        <!--View Controller-->
+        <!--My Books-->
         <scene sceneID="nHj-e8-3fX">
             <objects>
-                <viewController id="KKf-rt-kls" sceneMemberID="viewController">
+                <viewController id="KKf-rt-kls" customClass="CurrentBooksViewController" customModule="Purdue_Books" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Op0-6D-YwC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ggK-zO-znY">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BooksTableViewCell" id="Mdh-h7-HCE" customClass="BooksTableViewCell" customModule="Purdue_Books" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mdh-h7-HCE" id="Tl3-d7-UTU">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CS 240" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhY-1D-tBp">
+                                                    <rect key="frame" x="15" y="10" width="58" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The C Programming Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cec-PO-kUQ">
+                                                    <rect key="frame" x="126" y="10" width="234" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bookName" destination="cec-PO-kUQ" id="COP-Yg-omu"/>
+                                            <outlet property="couseNumber" destination="uhY-1D-tBp" id="OCX-Ed-Jiw"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zvC-Uf-Uza" firstAttribute="trailing" secondItem="ggK-zO-znY" secondAttribute="trailing" id="7ca-CL-4ta"/>
+                            <constraint firstItem="ggK-zO-znY" firstAttribute="top" secondItem="zvC-Uf-Uza" secondAttribute="top" id="YIp-WI-ROe"/>
+                            <constraint firstItem="ggK-zO-znY" firstAttribute="leading" secondItem="zvC-Uf-Uza" secondAttribute="leading" id="npv-uM-awu"/>
+                            <constraint firstItem="zvC-Uf-Uza" firstAttribute="bottom" secondItem="ggK-zO-znY" secondAttribute="bottom" id="vLS-2x-IHt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="zvC-Uf-Uza"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ZOo-nf-6US">
+                    <navigationItem key="navigationItem" title="My Books" id="ZOo-nf-6US">
                         <barButtonItem key="rightBarButtonItem" title="New" id="iLF-iY-h3v">
                             <connections>
                                 <segue destination="PwX-Cf-Dmg" kind="showDetail" id="o1V-oU-Qtp"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="ggK-zO-znY" id="lJd-4o-iT9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wzr-LA-e0e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
