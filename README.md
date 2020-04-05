@@ -137,3 +137,7 @@ This will be a simple app that allows Purdue students to sell their college book
    - Login / Register
       - (GET) Log in with credentials and see if user/password combo is valid
       - (POST) Register new account
+
+## Milestone GIFs
+
+### Milestone 1
