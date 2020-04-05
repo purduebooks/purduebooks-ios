@@ -8,6 +8,7 @@
 
 import UIKit
 import AlamofireImage
+import Parse
 
 class ListingViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -23,7 +24,22 @@ class ListingViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
     
     @IBAction func onSubmit(_ sender: Any) {
-        
+        let listingTB = PFObject(className: "Textbooks")
+        listingTB["Author"] = PFUser.current()!
+        listingTB["Name"] = titleTextbook.text
+        listingTB["Description"] = descriptionOfTextbook.text
+        listingTB["CouseNumber"] = courseNumber.text
+        listingTB["Course"] = course.text
+        let imageData = picture.image!.pngData()
+        let file = PFFileObject(data: imageData! )
+        listingTB["image"] = file
+        listingTB.saveInBackground { (success, error) in
+            if success {
+                self.dismiss(animated: true, completion:nil)
+            } else {
+                print("Error: \(error?.localizedDescription)")
+            }
+        }
     }
     
     @IBAction func onClear(_ sender: Any) {
