@@ -27,11 +27,11 @@ This will be a simple app that allows Purdue students to sell their college book
 
 **Required Must-have Stories**
 
-* Login / Registration
-* User Listing (based on course information)
-* Photo Upload
-* Textbook search via course name
-* Price & Semester Filtering
+* [x] Login / Registration
+* [ ] User Listing (based on course information)
+* [x] Photo Upload
+* [ ] Textbook search via course name
+* [ ] Price & Semester Filtering
 
 **Optional Nice-to-have Stories**
 
