@@ -10,9 +10,8 @@ import UIKit
 
 class AllBooksTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var bookNamee: UILabel!
-    @IBOutlet weak var couseNumbere: UILabel!
-    
+    @IBOutlet weak var courseName: UILabel!
+    @IBOutlet weak var courseNumber: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

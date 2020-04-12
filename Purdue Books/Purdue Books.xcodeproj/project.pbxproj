@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		23E61EA624391DE5009FF995 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E61EA524391DE5009FF995 /* RegisterViewController.swift */; };
+		493FCB0A2443A0C5004F3C46 /* AllBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493FCB092443A0C5004F3C46 /* AllBooksViewController.swift */; };
+		493FCB0C2443A174004F3C46 /* AllBooksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493FCB0B2443A174004F3C46 /* AllBooksTableViewCell.swift */; };
 		494C3FFE243A319600D1E8F1 /* ListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494C3FFD243A319600D1E8F1 /* ListingViewController.swift */; };
 		613FAEFC243A6A2900B7EB76 /* BooksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613FAEFB243A6A2900B7EB76 /* BooksTableViewCell.swift */; };
 		613FAEFE243A6B6000B7EB76 /* CurrentBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613FAEFD243A6B6000B7EB76 /* CurrentBooksViewController.swift */; };
@@ -41,6 +43,8 @@
 		23D4DD7D243A4CEC0050B901 /* WorkSans-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WorkSans-Bold.otf"; path = "../../../../Desktop/WorkSans-Bold.otf"; sourceTree = "<group>"; };
 		23E61EA524391DE5009FF995 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		335408D8FFFC0502EBB4DB31 /* Pods-Purdue Books.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Purdue Books.release.xcconfig"; path = "Pods/Target Support Files/Pods-Purdue Books/Pods-Purdue Books.release.xcconfig"; sourceTree = "<group>"; };
+		493FCB092443A0C5004F3C46 /* AllBooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllBooksViewController.swift; sourceTree = "<group>"; };
+		493FCB0B2443A174004F3C46 /* AllBooksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllBooksTableViewCell.swift; sourceTree = "<group>"; };
 		494C3FFD243A319600D1E8F1 /* ListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewController.swift; sourceTree = "<group>"; };
 		5A0EFFE8026969710110EA33 /* Pods-Login-Designs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Login-Designs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Login-Designs/Pods-Login-Designs.debug.xcconfig"; sourceTree = "<group>"; };
 		6023CAE17DFB29CFD14FBA05 /* Pods-Login-Designs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Login-Designs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Login-Designs/Pods-Login-Designs.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				613FAEFB243A6A2900B7EB76 /* BooksTableViewCell.swift */,
+				493FCB0B2443A174004F3C46 /* AllBooksTableViewCell.swift */,
 			);
 			name = TableViewCells;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 				23E61EA524391DE5009FF995 /* RegisterViewController.swift */,
 				494C3FFD243A319600D1E8F1 /* ListingViewController.swift */,
 				613FAEFD243A6B6000B7EB76 /* CurrentBooksViewController.swift */,
+				493FCB092443A0C5004F3C46 /* AllBooksViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -340,7 +346,9 @@
 				23E61EA624391DE5009FF995 /* RegisterViewController.swift in Sources */,
 				613FAEFE243A6B6000B7EB76 /* CurrentBooksViewController.swift in Sources */,
 				613FAEFC243A6A2900B7EB76 /* BooksTableViewCell.swift in Sources */,
+				493FCB0C2443A174004F3C46 /* AllBooksTableViewCell.swift in Sources */,
 				494C3FFE243A319600D1E8F1 /* ListingViewController.swift in Sources */,
+				493FCB0A2443A0C5004F3C46 /* AllBooksViewController.swift in Sources */,
 				E2A0BEFD226D92F0001F43AA /* DesignableUITextField.swift in Sources */,
 				E21C007D2268EFEC00E0ECCD /* AppDelegate.swift in Sources */,
 			);

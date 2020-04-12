@@ -1,5 +1,5 @@
 //
-//  CurrentBooksViewController.swift
+//  AllBooksViewController.swift
 //  Purdue Books
 //
 //  Created by Monal on 4/12/20.
@@ -20,10 +20,9 @@ class AllBooksViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "AlLBooksTableViewCell") as! AllBooksTableViewCell
-        
-        cell.couseNumbere.text = books[indexPath.row]["CouseNumber"] as? String
-        cell.bookNamee.text = books[indexPath.row]["Name"] as? String
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AllBooksTableViewCell") as! AllBooksTableViewCell
+        cell.courseNumber.text = books[indexPath.row]["CouseNumber"] as? String
+        cell.courseName.text = books[indexPath.row]["Name"] as? String
         
         return cell
     }
