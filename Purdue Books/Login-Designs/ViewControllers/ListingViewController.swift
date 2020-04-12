@@ -31,7 +31,7 @@ class ListingViewController: UIViewController, UIImagePickerControllerDelegate, 
         listingTB["CouseNumber"] = courseNumber.text
         listingTB["Course"] = course.text
         let imageData = picture.image!.pngData()
-        let file = PFFileObject(data: imageData! )
+        let file = PFFileObject(name: "image.png", data: imageData! )
         listingTB["image"] = file
         listingTB.saveInBackground { (success, error) in
             if success {

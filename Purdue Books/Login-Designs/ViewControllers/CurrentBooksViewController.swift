@@ -28,6 +28,11 @@ class CurrentBooksViewController: UIViewController, UITableViewDelegate, UITable
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc:ViewBookViewController = self.storyboard!.instantiateViewController(identifier: "ViewBookViewController")
+        vc.bookData = books[indexPath.row];
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
