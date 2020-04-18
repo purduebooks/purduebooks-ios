@@ -4,6 +4,7 @@ use_frameworks!
 pod "Parse"
 pod ‘Alamofire’
 pod 'AlamofireImage'
+pod 'DropDown'
 
 target 'Purdue Books' do
   # Pods for Login-Designs
