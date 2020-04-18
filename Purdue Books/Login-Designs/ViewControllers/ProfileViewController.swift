@@ -13,15 +13,15 @@ class ProfileViewController: UIViewController {
 
     @IBOutlet weak var nameField: UILabel!
     @IBOutlet weak var passwordField: UILabel!
+    
     @IBOutlet weak var emailField: UILabel!
     @IBOutlet weak var pnField: UILabel!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        let user = PFUser.current()
-        nameField.text = "HOHOHO"
-        // Do any additional setup after loading the view.
         
+        let user = PFUser.current()
+        nameField.text = user!.email
     }
 
     /*
