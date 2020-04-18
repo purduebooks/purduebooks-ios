@@ -15,6 +15,8 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var passwordField: FormTextField!
     @IBOutlet weak var confirmPasswordField: FormTextField!
     
+    @IBOutlet weak var emailField: FormTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,6 +37,7 @@ class RegisterViewController: UIViewController {
         let user = PFUser()
         user.username = usernameField.text
         user.password = passwordField.text
+        user.email = emailField.text
         
         user.signUpInBackground { (success, error) in
             if success {

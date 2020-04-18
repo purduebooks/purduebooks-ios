@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		233EF071244B2642000D0181 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233EF070244B2642000D0181 /* ProfileViewController.swift */; };
 		23E61EA624391DE5009FF995 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E61EA524391DE5009FF995 /* RegisterViewController.swift */; };
 		493FCB0A2443A0C5004F3C46 /* AllBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493FCB092443A0C5004F3C46 /* AllBooksViewController.swift */; };
 		493FCB0C2443A174004F3C46 /* AllBooksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493FCB0B2443A174004F3C46 /* AllBooksTableViewCell.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		1D88AB4281646DD95A4F53F7 /* Pods_Purdue_Books.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Purdue_Books.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		233EF070244B2642000D0181 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		23D4DD7D243A4CEC0050B901 /* WorkSans-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WorkSans-Bold.otf"; path = "../../../../Desktop/WorkSans-Bold.otf"; sourceTree = "<group>"; };
 		23E61EA524391DE5009FF995 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		335408D8FFFC0502EBB4DB31 /* Pods-Purdue Books.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Purdue Books.release.xcconfig"; path = "Pods/Target Support Files/Pods-Purdue Books/Pods-Purdue Books.release.xcconfig"; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				613FAEFD243A6B6000B7EB76 /* CurrentBooksViewController.swift */,
 				493FCB092443A0C5004F3C46 /* AllBooksViewController.swift */,
 				611BC02C2443AF8E0045BC3C /* ViewBookViewController.swift */,
+				233EF070244B2642000D0181 /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				494C3FFE243A319600D1E8F1 /* ListingViewController.swift in Sources */,
 				611BC02D2443AF8E0045BC3C /* ViewBookViewController.swift in Sources */,
 				493FCB0A2443A0C5004F3C46 /* AllBooksViewController.swift in Sources */,
+				233EF071244B2642000D0181 /* ProfileViewController.swift in Sources */,
 				E2A0BEFD226D92F0001F43AA /* DesignableUITextField.swift in Sources */,
 				E21C007D2268EFEC00E0ECCD /* AppDelegate.swift in Sources */,
 			);
