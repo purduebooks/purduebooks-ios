@@ -86,12 +86,14 @@ class AllBooksViewController: UIViewController, UITableViewDelegate, UITableView
     
     @IBAction func chooseTitle(_ sender: Any) {
         loadTitle()
-        NotificationCenter.default.addObserver(self, selector: #selector(loadData), name: NSNotification.Name(rawValue: "reload"), object: nil)
+        loadData()
+        self.tableView.reloadData()
     }
     
     @IBAction func chooseNumber(_ sender: Any) {
         loadNumber()
-        NotificationCenter.default.addObserver(self, selector: #selector(loadData), name: NSNotification.Name(rawValue: "reload123"), object: nil)
+        loadData()
+        self.tableView.reloadData()
     }
     
     @objc func loadData() {
