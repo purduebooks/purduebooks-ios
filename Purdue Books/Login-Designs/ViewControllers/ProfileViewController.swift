@@ -20,8 +20,14 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let user = PFUser.current()
-        nameField.text = user!.email
+        let user:PFUser = PFUser.current()!
+        nameField.text = user.username
+         
+        user.fetchInBackground(block: { (object, error) in
+            self.nameField.text = user.username
+            self.emailField.text = user.email
+        })
+        
     }
 
     /*
