@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IIP-8v-TG2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IIP-8v-TG2">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -124,10 +124,10 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AllBooksTableViewCell" id="OPC-sd-bJw" customClass="AllBooksTableViewCell" customModule="Purdue_Books" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OPC-sd-bJw" id="N1s-SR-cEB">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Discrete Mathematics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vd-CD-mOX">
@@ -271,7 +271,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="vP8-h7-kNd"/>
                     </view>
-                    <navigationItem key="navigationItem" title="My Profile" id="Hlz-AA-g6B"/>
+                    <navigationItem key="navigationItem" title="My Profile" id="Hlz-AA-g6B">
+                        <barButtonItem key="leftBarButtonItem" title="Edit" id="JEZ-Jc-IO9">
+                            <connections>
+                                <action selector="editProfile:" destination="xXf-ZY-TkE" id="jaq-xn-5PO"/>
+                                <segue destination="tW1-GN-iVI" kind="presentation" identifier="editSegue" id="2hd-Fk-wCQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="emailField" destination="NAp-EM-yyM" id="1wL-Wd-qyo"/>
                         <outlet property="nameField" destination="w7t-RQ-1ug" id="fbH-pm-2Io"/>
@@ -281,7 +288,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CCV-uJ-WPJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="864.79999999999995" y="2335.7142857142858"/>
+            <point key="canvasLocation" x="820" y="2336"/>
         </scene>
         <!--My Books-->
         <scene sceneID="nHj-e8-3fX">
@@ -499,7 +506,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wcZ-04-Tza" customClass="FormTextField" customModule="Purdue_Books" customModuleProvider="target">
-                                <rect key="frame" x="50" y="270" width="275" height="24"/>
+                                <rect key="frame" x="50" y="270" width="275" height="25.666666666666686"/>
                                 <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -510,12 +517,12 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g9o-cO-JjT" customClass="FormTextField" customModule="Purdue_Books" customModuleProvider="target">
-                                <rect key="frame" x="50" y="329" width="275" height="24"/>
+                                <rect key="frame" x="50" y="330.66666666666669" width="275" height="24"/>
                                 <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Retype Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CoI-fA-8Hd" customClass="FormTextField" customModule="Purdue_Books" customModuleProvider="target">
-                                <rect key="frame" x="50" y="381" width="275" height="24"/>
+                                <rect key="frame" x="50" y="382.66666666666669" width="275" height="24"/>
                                 <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
@@ -557,6 +564,7 @@
                     <connections>
                         <outlet property="confirmPasswordField" destination="CoI-fA-8Hd" id="4zf-zl-xM3"/>
                         <outlet property="emailField" destination="dOE-E9-ceI" id="WeP-ln-6O7"/>
+                        <outlet property="pNField" destination="tpV-HO-4rV" id="Nsq-2H-xB2"/>
                         <outlet property="passwordField" destination="g9o-cO-JjT" id="AMk-vr-Nlh"/>
                         <outlet property="usernameField" destination="wcZ-04-Tza" id="hgW-c4-cZD"/>
                     </connections>
@@ -597,7 +605,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rY6-nv-xoy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="865" y="1472"/>
+            <point key="canvasLocation" x="820" y="1472"/>
         </scene>
         <!--My Books-->
         <scene sceneID="tzA-V2-sJb">
@@ -735,11 +743,75 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IlC-19-K9g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="314" y="3012"/>
+            <point key="canvasLocation" x="-487" y="3010"/>
+        </scene>
+        <!--Edit Profile View Controller-->
+        <scene sceneID="VSH-pJ-vg9">
+            <objects>
+                <viewController id="tW1-GN-iVI" customClass="EditProfileViewController" customModule="Purdue_Books" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KbP-64-VqF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ycI-wh-CdU" customClass="FormTextField" customModule="Purdue_Books" customModuleProvider="target">
+                                <rect key="frame" x="16" y="27" width="87.666666666666671" height="25.666666666666671"/>
+                                <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YlJ-SS-DpY" customClass="FormTextField" customModule="Purdue_Books" customModuleProvider="target">
+                                <rect key="frame" x="16" y="112.66666666666667" width="82" height="24.000000000000014"/>
+                                <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TfH-Gr-tbD" customClass="FormTextField" customModule="Purdue_Books" customModuleProvider="target">
+                                <rect key="frame" x="16.000000000000007" y="282.33333333333331" width="126.66666666666669" height="25.666666666666686"/>
+                                <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lS0-eQ-XwG">
+                                <rect key="frame" x="110" y="644" width="155" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Apply Changes"/>
+                                <connections>
+                                    <action selector="onFinalEdit:" destination="tW1-GN-iVI" eventType="touchUpInside" id="hhA-hD-yw6"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2os-98-Cge" customClass="FormTextField" customModule="Purdue_Books" customModuleProvider="target">
+                                <rect key="frame" x="15.999999999999996" y="196.66666666666666" width="56.666666666666657" height="25.666666666666657"/>
+                                <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="QTd-Ni-wbv" firstAttribute="trailing" secondItem="lS0-eQ-XwG" secondAttribute="trailing" constant="110" id="6nR-Ua-jv2"/>
+                            <constraint firstItem="ycI-wh-CdU" firstAttribute="leading" secondItem="QTd-Ni-wbv" secondAttribute="leading" constant="16" id="8p0-o6-bq0"/>
+                            <constraint firstItem="2os-98-Cge" firstAttribute="top" secondItem="YlJ-SS-DpY" secondAttribute="bottom" constant="60" id="9zP-Ao-fxF"/>
+                            <constraint firstItem="TfH-Gr-tbD" firstAttribute="leading" secondItem="QTd-Ni-wbv" secondAttribute="leading" constant="16" id="C96-Ma-GJT"/>
+                            <constraint firstItem="lS0-eQ-XwG" firstAttribute="leading" secondItem="QTd-Ni-wbv" secondAttribute="leading" constant="110" id="DNi-SC-gJN"/>
+                            <constraint firstItem="2os-98-Cge" firstAttribute="leading" secondItem="QTd-Ni-wbv" secondAttribute="leading" constant="16" id="G9E-Xe-xAC"/>
+                            <constraint firstItem="QTd-Ni-wbv" firstAttribute="bottom" secondItem="lS0-eQ-XwG" secondAttribute="bottom" constant="40" id="NWc-ev-5Mn"/>
+                            <constraint firstItem="YlJ-SS-DpY" firstAttribute="top" secondItem="ycI-wh-CdU" secondAttribute="bottom" constant="60" id="kbi-vD-eIe"/>
+                            <constraint firstItem="YlJ-SS-DpY" firstAttribute="leading" secondItem="QTd-Ni-wbv" secondAttribute="leading" constant="16" id="mJv-J8-Qic"/>
+                            <constraint firstItem="TfH-Gr-tbD" firstAttribute="top" secondItem="2os-98-Cge" secondAttribute="bottom" constant="60" id="qTF-FM-iEs"/>
+                            <constraint firstItem="ycI-wh-CdU" firstAttribute="top" secondItem="QTd-Ni-wbv" secondAttribute="top" constant="27" id="zSz-5v-0QE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QTd-Ni-wbv"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailEditField" destination="2os-98-Cge" id="vwP-I8-GGa"/>
+                        <outlet property="passwordEditField" destination="YlJ-SS-DpY" id="YFz-wH-ArG"/>
+                        <outlet property="phoneNoEditField" destination="TfH-Gr-tbD" id="zrF-o7-Lgx"/>
+                        <outlet property="usernameEditField" destination="ycI-wh-CdU" id="Q5n-Ah-qna"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4SN-6z-0rZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="820" y="3180"/>
         </scene>
     </scenes>
     <resources>
         <image name="design_one/Login button" width="60" height="60"/>
-        <image name="square.and.arrow.down" catalog="system" width="60" height="64"/>
+        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
     </resources>
 </document>

@@ -17,6 +17,7 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak var emailField: FormTextField!
     
+    @IBOutlet weak var pNField: FormTextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -38,9 +39,11 @@ class RegisterViewController: UIViewController {
         user.username = usernameField.text
         user.password = passwordField.text
         user.email = emailField.text
+        user["phone"] = pNField.text
         
         user.signUpInBackground { (success, error) in
             if success {
+                
                 self.dismiss(animated: true, completion:nil)
             } else {
                 print("Error: \(error?.localizedDescription)")

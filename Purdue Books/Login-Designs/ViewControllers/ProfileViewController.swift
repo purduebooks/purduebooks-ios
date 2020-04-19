@@ -22,14 +22,20 @@ class ProfileViewController: UIViewController {
         
         let user:PFUser = PFUser.current()!
         nameField.text = user.username
-         
-        user.fetchInBackground(block: { (object, error) in
-            self.nameField.text = user.username
-            self.emailField.text = user.email
-        })
-        
+        emailField.text = user.email
     }
 
+    
+    @IBAction func editProfile(_ sender: Any) {
+        self.performSegue(withIdentifier: "editSegue", sender: nil)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let user:PFUser = PFUser.current()!
+        nameField.text = user.username
+        emailField.text = user.email
+        pnField.text = user["phone"] as! String
+    }
     /*
     // MARK: - Navigation
 
