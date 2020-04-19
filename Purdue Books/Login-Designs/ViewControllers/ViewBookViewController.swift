@@ -28,11 +28,12 @@ class ViewBookViewController: UIViewController {
         self.courseNumber.text = bookData["CouseNumber"] as? String
         
         let author = bookData["Author"] as! PFUser
+        
         author.fetchInBackground(block: { (object, error) in
             self.sellerName.text = author.username ?? "No username found"
-
+            
             self.sellerEmail.text = author.email ?? "Private"
-            self.sellerNumber.text = (author["phone"] as? String) ?? "Private" 
+            self.sellerNumber.text = (author["phone"] as? String) ?? "Private"
         })
         
         let img = bookData["image"] as! PFFileObject
