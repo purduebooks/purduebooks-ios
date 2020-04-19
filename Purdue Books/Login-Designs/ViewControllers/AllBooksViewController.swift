@@ -19,7 +19,7 @@ class AllBooksViewController: UIViewController, UITableViewDelegate, UITableView
     var books = [PFObject]()
     var titles = [String]()
     var numbers = [String]()
-    
+        
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return books.count
     }
@@ -64,6 +64,10 @@ class AllBooksViewController: UIViewController, UITableViewDelegate, UITableView
         dropDown.dataSource = titles
         dropDown.selectionAction = { [weak self] (index, item) in
             self?.titleNumberButton.setTitle(item, for: .normal)
+            
+
+            self?.loadData()
+            self?.tableView.reloadData()
         }
         dropDown.dismissMode = .automatic
         dropDown.width = 150
@@ -77,6 +81,9 @@ class AllBooksViewController: UIViewController, UITableViewDelegate, UITableView
         dropDown.dataSource = numbers
         dropDown.selectionAction = { [weak self] (index, item) in
             self?.courseNumberButton.setTitle(item, for: .normal)
+
+            self?.loadData()
+            self?.tableView.reloadData()
         }
         dropDown.dismissMode = .automatic
         dropDown.width = 100
@@ -86,17 +93,15 @@ class AllBooksViewController: UIViewController, UITableViewDelegate, UITableView
     
     @IBAction func chooseTitle(_ sender: Any) {
         loadTitle()
-        loadData()
-        self.tableView.reloadData()
     }
     
     @IBAction func chooseNumber(_ sender: Any) {
         loadNumber()
-        loadData()
-        self.tableView.reloadData()
     }
     
     @objc func loadData() {
+        showSpinner(onView: self.view)
+        
         let query = PFQuery(className: "Textbooks");
         
         if (titleNumberButton.currentTitle == "All Titles") {
@@ -120,6 +125,7 @@ class AllBooksViewController: UIViewController, UITableViewDelegate, UITableView
             self.books = posts;
             self.tableView.reloadData()
            }
+            self.removeSpinner()
         }
     }
     
