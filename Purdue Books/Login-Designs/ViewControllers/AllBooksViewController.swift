@@ -100,8 +100,6 @@ class AllBooksViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     @objc func loadData() {
-        showSpinner(onView: self.view)
-        
         let query = PFQuery(className: "Textbooks");
         
         if (titleNumberButton.currentTitle == "All Titles") {
@@ -125,7 +123,6 @@ class AllBooksViewController: UIViewController, UITableViewDelegate, UITableView
             self.books = posts;
             self.tableView.reloadData()
            }
-            self.removeSpinner()
         }
     }
     
