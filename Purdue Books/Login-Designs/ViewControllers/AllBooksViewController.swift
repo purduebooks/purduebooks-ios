@@ -58,7 +58,7 @@ class AllBooksViewController: UIViewController, UITableViewDelegate, UITableView
         loadData()
     }
     
-    func loadTitle() {
+    @objc func loadTitle() {
         let dropDown = DropDown()
         dropDown.anchorView = titleNumberButton
         dropDown.dataSource = titles
@@ -71,7 +71,7 @@ class AllBooksViewController: UIViewController, UITableViewDelegate, UITableView
         dropDown.show()
     }
     
-    func loadNumber() {
+    @objc func loadNumber() {
         let dropDown = DropDown()
         dropDown.anchorView = courseNumberButton
         dropDown.dataSource = numbers
@@ -86,12 +86,12 @@ class AllBooksViewController: UIViewController, UITableViewDelegate, UITableView
     
     @IBAction func chooseTitle(_ sender: Any) {
         loadTitle()
-        viewDidAppear(true)
+        NotificationCenter.default.addObserver(self, selector: #selector(loadData), name: NSNotification.Name(rawValue: "reload"), object: nil)
     }
     
     @IBAction func chooseNumber(_ sender: Any) {
         loadNumber()
-        viewDidAppear(true)
+        NotificationCenter.default.addObserver(self, selector: #selector(loadData), name: NSNotification.Name(rawValue: "reload123"), object: nil)
     }
     
     @objc func loadData() {
@@ -108,7 +108,7 @@ class AllBooksViewController: UIViewController, UITableViewDelegate, UITableView
         if (courseNumberButton.currentTitle != "All Numbers") {
             query.whereKey("CouseNumber", equalTo: courseNumberButton.currentTitle as Any)
         }
-        
+        print("Works")
         query.order(byDescending: "createdAt")
         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
            if let error = error {
