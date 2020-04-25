@@ -27,23 +27,13 @@ class ViewController: UIViewController {
         if (!usernameField.text!.isEmpty && !passwordField.text!.isEmpty) {
             PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
                  if user != nil {
-                     let_login = true
+                     self.performSegue(withIdentifier: "loginSegue", sender: nil)
                  } else {
                     print("Error: \(error?.localizedDescription)")
                     self.dismiss(animated: true, completion:nil)
                 }
             }
         }
-        
-        else {
-            print("Fill in details first!")
-            return
-        }
-        
-        if(let_login == true) {
-            self.performSegue(withIdentifier: "loginSegue", sender: nil)
-        }
-        
     }
     
     @IBAction func registerButton(_ sender: Any) {

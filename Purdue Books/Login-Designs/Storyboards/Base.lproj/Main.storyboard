@@ -278,6 +278,12 @@
                                 <segue destination="tW1-GN-iVI" kind="presentation" identifier="editSegue" id="2hd-Fk-wCQ"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="hPl-Lo-16v">
+                            <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="onLogout:" destination="xXf-ZY-TkE" id="DfP-hr-IiG"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="emailField" destination="NAp-EM-yyM" id="1wL-Wd-qyo"/>

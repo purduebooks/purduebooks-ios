@@ -52,5 +52,8 @@ class ProfileViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func onLogout(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }
