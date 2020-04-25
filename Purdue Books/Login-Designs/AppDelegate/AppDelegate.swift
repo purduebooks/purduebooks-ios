@@ -27,12 +27,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             })
         )
         
-        if (PFUser.current() != nil) {
-            let main = UIStoryboard(name: "Main", bundle: nil)
-            let feedNavController = main.instantiateViewController(withIdentifier: "TabBarController")
-
-            window?.rootViewController = feedNavController
-        }
+//        if (PFUser.current() != nil) {
+//            let main = UIStoryboard(name: "Main", bundle: nil)
+//            let feedNavController = main.instantiateViewController(withIdentifier: "TabBarController")
+//
+//            window?.rootViewController = feedNavController
+//        }
         
         return true
     }

@@ -69,4 +69,9 @@ class RegisterViewController: UIViewController {
             }
         }
     }
+    
+    
+    @IBAction func onBack(_ sender: Any) {
+        self.dismiss(animated: true, completion:nil)
+    }
 }

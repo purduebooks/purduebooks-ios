@@ -526,36 +526,45 @@
                                 <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kev-3O-DD6">
-                                <rect key="frame" x="50" y="606" width="275" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Register!!"/>
-                                <connections>
-                                    <action selector="onRegister:" destination="d9j-u2-dSi" eventType="touchUpInside" id="POX-dm-v4Q"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tpV-HO-4rV" customClass="FormTextField" customModule="Purdue_Books" customModuleProvider="target">
                                 <rect key="frame" x="50" y="481" width="275" height="25.666666666666686"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9R-iX-Npb">
+                                <rect key="frame" x="20" y="643" width="135" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Back to Login"/>
+                                <connections>
+                                    <action selector="onBack:" destination="d9j-u2-dSi" eventType="touchUpInside" id="BYc-MR-uyX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kev-3O-DD6">
+                                <rect key="frame" x="256" y="643" width="99" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Register!!"/>
+                                <connections>
+                                    <action selector="onRegister:" destination="d9j-u2-dSi" eventType="touchUpInside" id="POX-dm-v4Q"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="CoI-fA-8Hd" firstAttribute="top" secondItem="g9o-cO-JjT" secondAttribute="bottom" constant="28" id="0EI-h4-20P"/>
+                            <constraint firstItem="L9R-iX-Npb" firstAttribute="leading" secondItem="sjp-ly-N4e" secondAttribute="leading" constant="20" id="1C7-Mr-X2E"/>
+                            <constraint firstItem="sjp-ly-N4e" firstAttribute="bottom" secondItem="L9R-iX-Npb" secondAttribute="bottom" constant="95" id="22g-Qr-Eu7"/>
                             <constraint firstItem="fb1-Pj-bPs" firstAttribute="leading" secondItem="sjp-ly-N4e" secondAttribute="leading" id="5Gu-9b-wek"/>
                             <constraint firstItem="sjp-ly-N4e" firstAttribute="trailing" secondItem="CoI-fA-8Hd" secondAttribute="trailing" constant="50" id="6Aw-4V-IC7"/>
-                            <constraint firstItem="sjp-ly-N4e" firstAttribute="bottom" secondItem="kev-3O-DD6" secondAttribute="bottom" constant="131" id="CJI-mk-kfv"/>
+                            <constraint firstItem="sjp-ly-N4e" firstAttribute="bottom" secondItem="kev-3O-DD6" secondAttribute="bottom" constant="94" id="ADV-4u-VGX"/>
                             <constraint firstItem="sjp-ly-N4e" firstAttribute="trailing" secondItem="g9o-cO-JjT" secondAttribute="trailing" constant="50" id="FD2-eU-ndK"/>
                             <constraint firstItem="g9o-cO-JjT" firstAttribute="leading" secondItem="sjp-ly-N4e" secondAttribute="leading" constant="50" id="FrQ-nE-pbw"/>
                             <constraint firstItem="sjp-ly-N4e" firstAttribute="trailing" secondItem="wcZ-04-Tza" secondAttribute="trailing" constant="50" id="Naf-4H-uue"/>
                             <constraint firstItem="sjp-ly-N4e" firstAttribute="trailing" secondItem="fb1-Pj-bPs" secondAttribute="trailing" id="Tgh-cA-Glt"/>
-                            <constraint firstItem="sjp-ly-N4e" firstAttribute="trailing" secondItem="kev-3O-DD6" secondAttribute="trailing" constant="50" id="Tz2-i0-RFK"/>
                             <constraint firstItem="g9o-cO-JjT" firstAttribute="top" secondItem="wcZ-04-Tza" secondAttribute="bottom" constant="35" id="UIM-jX-Ph7"/>
+                            <constraint firstItem="sjp-ly-N4e" firstAttribute="trailing" secondItem="kev-3O-DD6" secondAttribute="trailing" constant="20" id="X1J-Rr-Oqp"/>
                             <constraint firstItem="fb1-Pj-bPs" firstAttribute="top" secondItem="sjp-ly-N4e" secondAttribute="top" constant="95" id="vgo-c9-hm5"/>
                             <constraint firstItem="wcZ-04-Tza" firstAttribute="leading" secondItem="sjp-ly-N4e" secondAttribute="leading" constant="50" id="vmQ-bf-zKQ"/>
-                            <constraint firstItem="kev-3O-DD6" firstAttribute="leading" secondItem="sjp-ly-N4e" secondAttribute="leading" constant="50" id="wYN-na-cid"/>
                             <constraint firstItem="wcZ-04-Tza" firstAttribute="top" secondItem="fb1-Pj-bPs" secondAttribute="bottom" constant="84.329999999999998" id="xGh-c3-a2N"/>
                             <constraint firstItem="CoI-fA-8Hd" firstAttribute="leading" secondItem="sjp-ly-N4e" secondAttribute="leading" constant="50" id="zQv-Cd-x5m"/>
                         </constraints>
@@ -571,7 +580,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Me1-dY-9tv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1302" y="-84"/>
+            <point key="canvasLocation" x="1301.5999999999999" y="-84.236453201970448"/>
         </scene>
         <!--All Books-->
         <scene sceneID="zgL-HY-phe">
