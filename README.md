@@ -30,8 +30,8 @@ This will be a simple app that allows Purdue students to sell their college book
 * [x] Login / Registration
 * [x] User Listing (based on course information)
 * [x] Photo Upload
-* [ ] Textbook search via course name
-* [ ] Price & Semester Filtering
+* [x] Textbook search via course name
+* [x] Filtering
 
 **Optional Nice-to-have Stories**
 
@@ -144,3 +144,6 @@ This will be a simple app that allows Purdue students to sell their college book
 
 ### Milestone 2
 <img src='https://github.com/purduebooks/purduebooks-ios/blob/master/PurdueBooks_Milestone2.gif?raw=true' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+### Milestone 3
+<img src='https://github.com/purduebooks/purduebooks-ios/blob/master/PurdueBooks_Milestone3.gif?raw=true' title='Video Walkthrough' width='' alt='Video Walkthrough' />

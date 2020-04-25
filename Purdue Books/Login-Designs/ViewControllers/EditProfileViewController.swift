@@ -60,6 +60,8 @@ class EditProfileViewController: UIViewController {
         phone_no_edited == true ||
             email_edited == true) {
             user.saveInBackground();
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "reload_profile"), object: nil);
+
             self.dismiss(animated: true, completion: nil);
         }
     }

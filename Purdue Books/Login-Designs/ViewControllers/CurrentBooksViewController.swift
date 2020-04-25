@@ -33,12 +33,26 @@ class CurrentBooksViewController: UIViewController, UITableViewDelegate, UITable
         vc.bookData = books[indexPath.row];
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete) {
+            PFObject.deleteAll(inBackground: [books[indexPath.row]]) { (success, err) in
+                self.loadData()
+            }
+            
+        }
+    }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         loadData()
         
+        self.tableView.allowsSelectionDuringEditing = true
     }
     
    @objc func loadData() {

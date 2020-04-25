@@ -20,9 +20,16 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        loadData()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(loadData), name: NSNotification.Name(rawValue: "reload_profile"), object: nil)
+    }
+    
+    @objc func loadData() {
         let user:PFUser = PFUser.current()!
         nameField.text = user.username
         emailField.text = user.email
+        pnField.text = user["phone"] as! String
     }
 
     
