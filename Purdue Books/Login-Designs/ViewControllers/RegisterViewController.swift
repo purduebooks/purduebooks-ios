@@ -35,18 +35,37 @@ class RegisterViewController: UIViewController {
     }
     */
     @IBAction func onRegister(_ sender: Any) {
-        let user = PFUser()
-        user.username = usernameField.text
-        user.password = passwordField.text
-        user.email = emailField.text
-        user["phone"] = pNField.text
+        let pN = Int(pNField.text!) ?? -1
+        if(passwordField.text!.count >= 8 &&
+           confirmPasswordField.text == passwordField.text &&
+           pN > 0) {
+            
+            let user = PFUser()
+            user.username = usernameField.text
+            user.password = passwordField.text
+            user.email = emailField.text
+            user["phone"] = pNField.text
         
-        user.signUpInBackground { (success, error) in
-            if success {
-                
-                self.dismiss(animated: true, completion:nil)
-            } else {
-                print("Error: \(error?.localizedDescription)")
+            user.signUpInBackground { (success, error) in
+                if success {
+                    self.dismiss(animated: true, completion:nil)
+                } else {
+                    print("Error: \(error?.localizedDescription)")
+                }
+            }
+        }
+            
+        else{
+            if (passwordField.text!.count < 8) {
+                print("Invalid password length. Make sure it is more than 8 characters!")
+            }
+            
+            if (confirmPasswordField.text != passwordField.text) {
+                print("The passwords do not match!")
+            }
+            
+            if (pN <= 0) {
+                print("Invalid phone number!!!")
             }
         }
     }

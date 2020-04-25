@@ -23,20 +23,42 @@ class ViewController: UIViewController {
         
         let username = usernameField.text!
         let password = passwordField.text!
-        PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
-             if user != nil {
-                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
-             } else {
-                 print("Error: \(error?.localizedDescription)")
-                
-                self.dismiss(animated: true, completion:nil)
+        var let_login = false;
+        if (!usernameField.text!.isEmpty && !passwordField.text!.isEmpty) {
+            PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
+                 if user != nil {
+                     let_login = true
+                 } else {
+                    print("Error: \(error?.localizedDescription)")
+                    self.dismiss(animated: true, completion:nil)
+                }
             }
         }
+        
+        else {
+            print("Fill in details first!")
+            return
+        }
+        
+        if(let_login == true) {
+            self.performSegue(withIdentifier: "loginSegue", sender: nil)
+        }
+        
     }
     
     @IBAction func registerButton(_ sender: Any) {
         self.performSegue(withIdentifier: "signUpSegue", sender: nil)
     }
     
-}
+    func shouldPerformSegue(withIdentifier: String!, sender: AnyObject!) -> Bool {
+        if withIdentifier == "loginSegue" { // you define it in the storyboard (click on the segue, then Attributes' inspector > Identifier
+            
+            if (!usernameField.text!.isEmpty && !passwordField.text!.isEmpty) {
+                return true;
+            }
+        }
+        
+        return false;
+    }
 
+}
