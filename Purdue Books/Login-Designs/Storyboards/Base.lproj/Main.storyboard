@@ -103,7 +103,7 @@
                     <connections>
                         <outlet property="passwordField" destination="t1t-jv-yzG" id="baH-Ro-LLh"/>
                         <outlet property="usernameField" destination="BAk-OH-Qth" id="nCY-Tz-2V7"/>
-                        <segue destination="qPy-ul-yJ0" kind="presentation" identifier="loginSegue" id="qWk-Cy-grA"/>
+                        <segue destination="qPy-ul-yJ0" kind="presentation" identifier="loginSegue" modalPresentationStyle="fullScreen" id="qWk-Cy-grA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aGs-jr-8E0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -115,7 +115,7 @@
             <objects>
                 <viewController id="pnh-ho-e9I" customClass="AllBooksViewController" customModule="Purdue_Books" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9cA-rc-C6m">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YA8-H3-DJ7">
@@ -208,7 +208,7 @@
             <objects>
                 <viewController id="xXf-ZY-TkE" customClass="ProfileViewController" customModule="Purdue_Books" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZwR-YU-yIG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ant-HB-XyP">
@@ -301,11 +301,11 @@
             <objects>
                 <viewController id="KKf-rt-kls" customClass="CurrentBooksViewController" customModule="Purdue_Books" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Op0-6D-YwC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ggK-zO-znY">
-                                <rect key="frame" x="0.0" y="56" width="375" height="619"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BooksTableViewCell" id="Mdh-h7-HCE" customClass="BooksTableViewCell" customModule="Purdue_Books" customModuleProvider="target">
@@ -410,34 +410,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Course" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYy-lc-LYI">
-                                <rect key="frame" x="34" y="176" width="55" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Course Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xql-ec-jc1">
-                                <rect key="frame" x="34" y="232" width="121" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xW8-Wn-WeD">
                                 <rect key="frame" x="140" y="114" width="198" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xuH-lR-KUu">
-                                <rect key="frame" x="140" y="169" width="198" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wok-yF-fcc">
-                                <rect key="frame" x="203" y="225" width="135" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -455,6 +429,28 @@
                                 <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxO-6s-wf4">
+                                <rect key="frame" x="99" y="227" width="175" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Choose Course Number">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickCourseNumber:" destination="PwX-Cf-Dmg" eventType="touchUpInside" id="at8-8J-3vQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REQ-H9-68a">
+                                <rect key="frame" x="99" y="171" width="165" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Choose Course Title">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickCourseTitle:" destination="PwX-Cf-Dmg" eventType="touchUpInside" id="3ES-lF-NAp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="krp-pU-SVV"/>
@@ -462,8 +458,8 @@
                     <tabBarItem key="tabBarItem" title="My Books" id="OJw-wx-rwF"/>
                     <navigationItem key="navigationItem" id="gNb-j7-0Mb"/>
                     <connections>
-                        <outlet property="course" destination="xuH-lR-KUu" id="l2a-rd-YPR"/>
-                        <outlet property="courseNumber" destination="wok-yF-fcc" id="a3B-WC-hVa"/>
+                        <outlet property="courseNumberButton" destination="sxO-6s-wf4" id="P1X-uT-lpS"/>
+                        <outlet property="courseTitleButton" destination="REQ-H9-68a" id="j73-Al-nHE"/>
                         <outlet property="descriptionOfTextbook" destination="QVB-0g-Rv8" id="Bke-TD-fOh"/>
                         <outlet property="picture" destination="PAU-t4-Vdf" id="bkA-5c-CKE"/>
                         <outlet property="titleTextbook" destination="xW8-Wn-WeD" id="47t-My-cQZ"/>
@@ -476,7 +472,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2975" y="2263"/>
+            <point key="canvasLocation" x="2973.5999999999999" y="2262.5615763546798"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Vau-n3-GR9">
@@ -594,7 +590,7 @@
                 <navigationController id="Eac-h2-qkb" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="All Books" id="6YZ-Xe-q36"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Vd-dQ-aL7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -611,7 +607,7 @@
                 <navigationController id="N4N-Ce-RBg" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" id="UjV-6z-jjN"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="c6L-2C-1kD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -629,7 +625,7 @@
                     <tabBarItem key="tabBarItem" title="My Books" id="y15-XE-khP"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yLx-Ua-9RA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
