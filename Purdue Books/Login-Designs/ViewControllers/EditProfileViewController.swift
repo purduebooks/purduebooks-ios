@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import SPAlert
 
 class EditProfileViewController: UIViewController {
 
@@ -62,6 +63,7 @@ class EditProfileViewController: UIViewController {
             user.saveInBackground();
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: "reload_profile"), object: nil);
 
+            SPAlert.present(title: "Updated Profile!", preset: .done)
             self.dismiss(animated: true, completion: nil);
         }
     }

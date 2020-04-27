@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import SPAlert
 
 class ViewController: UIViewController {
 
@@ -27,9 +28,11 @@ class ViewController: UIViewController {
         if (!usernameField.text!.isEmpty && !passwordField.text!.isEmpty) {
             PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
                  if user != nil {
+                     SPAlert.present(title: "Logging in...", preset: .done)
                      self.performSegue(withIdentifier: "loginSegue", sender: nil)
                  } else {
                     print("Error: \(error?.localizedDescription)")
+                    SPAlert.present(title: error?.localizedDescription ?? "Error", preset: .error)
                     self.dismiss(animated: true, completion:nil)
                 }
             }
@@ -45,6 +48,9 @@ class ViewController: UIViewController {
             
             if (!usernameField.text!.isEmpty && !passwordField.text!.isEmpty) {
                 return true;
+            }
+            else {
+                SPAlert.present(title: "Please enter a username/password.", preset: .error)
             }
         }
         

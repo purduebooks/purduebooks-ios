@@ -9,6 +9,7 @@ PODS:
     - Parse/Core (= 1.17.3)
   - Parse/Core (1.17.3):
     - Bolts/Tasks (~> 1.9)
+  - SPAlert (2.1.4)
 
 DEPENDENCIES:
   - Alamofire
@@ -16,6 +17,7 @@ DEPENDENCIES:
   - DropDown
   - IQKeyboardManagerSwift
   - Parse
+  - SPAlert
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -25,6 +27,7 @@ SPEC REPOS:
     - DropDown
     - IQKeyboardManagerSwift
     - Parse
+    - SPAlert
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
@@ -33,7 +36,8 @@ SPEC CHECKSUMS:
   DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
   IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
   Parse: c1ad2a04d2cab2b54b6fb7da05f741abf2cf57d1
+  SPAlert: 1a8afa1c6ac86a82ab5b2cfdf7f9a51e68cb6c0c
 
-PODFILE CHECKSUM: c65f868f9d3e971e99de65ba44530d69a4fd8cc4
+PODFILE CHECKSUM: c76449a8dc328b7c63753a74788120e788af1e8b
 
 COCOAPODS: 1.7.1

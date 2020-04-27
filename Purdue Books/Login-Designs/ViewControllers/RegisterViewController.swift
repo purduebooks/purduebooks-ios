@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import SPAlert
 
 class RegisterViewController: UIViewController {
 
@@ -48,27 +49,29 @@ class RegisterViewController: UIViewController {
         
             user.signUpInBackground { (success, error) in
                 if success {
+                    SPAlert.present(title: "Sign up successful, please log in.", preset: .done)
                     self.dismiss(animated: true, completion:nil)
                 } else {
+                    SPAlert.present(title: error?.localizedDescription ?? "Error", preset: .error)
                     print("Error: \(error?.localizedDescription)")
                 }
             }
         }
             
-        else{
-            if (passwordField.text!.count < 8) {
-                print("Invalid password length. Make sure it is more than 8 characters!")
-            }
-            
-            if (confirmPasswordField.text != passwordField.text) {
-                print("The passwords do not match!")
-            }
-            
-            if (pN <= 0) {
-                print("Invalid phone number!!!")
-            }
+        else if (passwordField.text!.count < 8) {
+            print("Invalid password length. Make sure it is more than 8 characters!")
+            SPAlert.present(title: "Invalid password length. Make sure it is more than 8 characters!", preset: .error)
+        }
+        else if (confirmPasswordField.text != passwordField.text) {
+            SPAlert.present(title: "The passwords do not match!", preset: .error)
+            print("The passwords do not match!")
+        }
+        else if (pN <= 0) {
+            SPAlert.present(title: "Invalid phone number!!!", preset: .error)
+            print("Invalid phone number!!!")
         }
     }
+    
     
     
     @IBAction func onBack(_ sender: Any) {

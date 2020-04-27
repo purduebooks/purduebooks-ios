@@ -10,6 +10,7 @@ import UIKit
 import AlamofireImage
 import Parse
 import DropDown
+import SPAlert
 
 class ListingViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -42,9 +43,11 @@ class ListingViewController: UIViewController, UIImagePickerControllerDelegate, 
         listingTB["image"] = file
         listingTB.saveInBackground { (success, error) in
             if success {
+                SPAlert.present(title: "Sucessfully listed book!", preset: .done);
                 NotificationCenter.default.post(name: NSNotification.Name(rawValue: "reload_books"), object: nil);
                 self.dismiss(animated: true, completion:nil)
             } else {
+                SPAlert.present(title: "Error, please try again", preset: .error);
                 print("Error: \(error?.localizedDescription)")
             }
         }
