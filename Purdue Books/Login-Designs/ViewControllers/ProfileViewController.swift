@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import SPAlert
 
 class ProfileViewController: UIViewController {
 
@@ -54,6 +55,7 @@ class ProfileViewController: UIViewController {
     */
     @IBAction func onLogout(_ sender: Any) {
         PFUser.logOut()
+        SPAlert.present(title: "Successfully Logged out", preset: .done)
         let main = UIStoryboard(name: "Main", bundle: nil)
         let loginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
         let delegate = UIApplication.shared.delegate as! AppDelegate
