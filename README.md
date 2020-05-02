@@ -152,4 +152,4 @@ This will be a simple app that allows Purdue students to sell their college book
 <img src='https://github.com/purduebooks/purduebooks-ios/blob/master/PurdueBooks_Milestone4.gif?raw=true' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ### Final Demo Video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/JVoKc8FIyPs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Final Demo Video](http://img.youtube.com/vi/JVoKc8FIyPs/0.jpg)](https://www.youtube.com/embed/JVoKc8FIyPs)
