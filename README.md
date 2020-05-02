@@ -2,6 +2,7 @@ Group Project - README
 ===
 
 # PurdueBooks
+<img src='https://github.com/purduebooks/purduebooks-ios/blob/master/purduebooks-logo.png?raw=true' title='Purdue Books Logo' width='200px' alt='Purdue Books Logo' />
 
 ## Table of Contents
 1. [Overview](#Overview)
