@@ -30,7 +30,9 @@ class ProfileViewController: UIViewController {
         let user:PFUser = PFUser.current()!
         nameField.text = user.username
         emailField.text = user.email
-        pnField.text = user["phone"] as! String
+        if (user["phone"] != nil) {
+            pnField.text = user["phone"] as! String
+        }
     }
 
     
@@ -42,7 +44,10 @@ class ProfileViewController: UIViewController {
         let user:PFUser = PFUser.current()!
         nameField.text = user.username
         emailField.text = user.email
-        pnField.text = user["phone"] as! String
+        if (user["phone"] != nil) {
+            pnField.text = user["phone"] as! String
+        }
+        
     }
     /*
     // MARK: - Navigation

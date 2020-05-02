@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IIP-8v-TG2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IIP-8v-TG2">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -124,10 +124,10 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AllBooksTableViewCell" id="OPC-sd-bJw" customClass="AllBooksTableViewCell" customModule="Purdue_Books" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OPC-sd-bJw" id="N1s-SR-cEB">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Discrete Mathematics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vd-CD-mOX">
@@ -508,7 +508,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wcZ-04-Tza" customClass="FormTextField" customModule="Purdue_Books" customModuleProvider="target">
-                                <rect key="frame" x="50" y="270" width="275" height="25.666666666666686"/>
+                                <rect key="frame" x="50" y="270" width="275" height="24"/>
                                 <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -519,12 +519,12 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g9o-cO-JjT" customClass="FormTextField" customModule="Purdue_Books" customModuleProvider="target">
-                                <rect key="frame" x="50" y="330.66666666666669" width="275" height="24"/>
+                                <rect key="frame" x="50" y="329" width="275" height="24"/>
                                 <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Retype Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CoI-fA-8Hd" customClass="FormTextField" customModule="Purdue_Books" customModuleProvider="target">
-                                <rect key="frame" x="50" y="382.66666666666669" width="275" height="24"/>
+                                <rect key="frame" x="50" y="381" width="275" height="24"/>
                                 <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
@@ -588,7 +588,7 @@
         <scene sceneID="zgL-HY-phe">
             <objects>
                 <navigationController id="Eac-h2-qkb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="All Books" id="6YZ-Xe-q36"/>
+                    <tabBarItem key="tabBarItem" title="All Books" image="monitor" id="6YZ-Xe-q36"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Vd-dQ-aL7">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -605,7 +605,7 @@
         <scene sceneID="mPb-sJ-Glh">
             <objects>
                 <navigationController id="N4N-Ce-RBg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="UjV-6z-jjN"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="social-media" id="UjV-6z-jjN"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="c6L-2C-1kD">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -622,7 +622,7 @@
         <scene sceneID="tzA-V2-sJb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HM0-sz-J5f" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Books" id="y15-XE-khP"/>
+                    <tabBarItem key="tabBarItem" title="My Books" image="shop" id="y15-XE-khP"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yLx-Ua-9RA">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -765,17 +765,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ycI-wh-CdU" customClass="FormTextField" customModule="Purdue_Books" customModuleProvider="target">
-                                <rect key="frame" x="16" y="27" width="87.666666666666671" height="25.666666666666671"/>
+                                <rect key="frame" x="16" y="27" width="87.666666666666671" height="24"/>
                                 <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YlJ-SS-DpY" customClass="FormTextField" customModule="Purdue_Books" customModuleProvider="target">
-                                <rect key="frame" x="16" y="112.66666666666667" width="82" height="24.000000000000014"/>
+                                <rect key="frame" x="16" y="111" width="82" height="24"/>
                                 <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TfH-Gr-tbD" customClass="FormTextField" customModule="Purdue_Books" customModuleProvider="target">
-                                <rect key="frame" x="16.000000000000007" y="282.33333333333331" width="126.66666666666669" height="25.666666666666686"/>
+                                <rect key="frame" x="16.000000000000007" y="279" width="126.66666666666669" height="24"/>
                                 <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -788,7 +788,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2os-98-Cge" customClass="FormTextField" customModule="Purdue_Books" customModuleProvider="target">
-                                <rect key="frame" x="15.999999999999996" y="196.66666666666666" width="56.666666666666657" height="25.666666666666657"/>
+                                <rect key="frame" x="15.999999999999996" y="195" width="56.666666666666657" height="24"/>
                                 <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -823,6 +823,9 @@
     </scenes>
     <resources>
         <image name="design_one/Login button" width="60" height="60"/>
-        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
+        <image name="monitor" width="25" height="25"/>
+        <image name="shop" width="25" height="25"/>
+        <image name="social-media" width="25" height="25"/>
+        <image name="square.and.arrow.down" catalog="system" width="60" height="64"/>
     </resources>
 </document>
